@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "563037112471",
+    "project_id": "near-u-ef131",
+    "storage_bucket": "near-u-ef131.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:563037112471:android:c0c024de8abf19817041d2",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "563037112471-pjqud09qbru50q8kfhd4sok7rnahnmuo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBS4zY7IwmN95VRGO7zI6eFGMWoV3iVaHg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "563037112471-pjqud09qbru50q8kfhd4sok7rnahnmuo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

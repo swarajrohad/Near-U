@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_main">
+
+    <fragment
+        android:id="@+id/nav_host_fragment_content_main"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/horizontalScrollView"
+        app:navGraph="@navigation/mobile_navigation" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="590dp"
+        android:layout_height="823dp"
+        android:background="#9F9A9A"
+        app:layout_constraintBottom_toBottomOf="@+id/nav_host_fragment_content_main"
+        app:layout_constraintEnd_toEndOf="@+id/nav_host_fragment_content_main"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="#CAC5C5"
+        android:foregroundGravity="center_vertical"
+        android:paddingTop="10dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="171dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:orientation="horizontal"
+            android:paddingTop="40dp"
+            android:paddingBottom="40dp"
+            tools:layout_editor_absoluteX="-8dp"
+            tools:layout_editor_absoluteY="1dp">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="194dp"
+                android:layout_height="117dp"
+                android:layout_weight="1"
+                android:padding="3dp"
+                app:srcCompat="@drawable/m1" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="203dp"
+                android:layout_height="117dp"
+                android:layout_weight="1"
+                android:padding="3dp"
+                app:srcCompat="@drawable/m2" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="200dp"
+                android:layout_height="117dp"
+                android:layout_weight="1"
+                android:padding="3dp"
+                app:srcCompat="@drawable/m3" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="200dp"
+                android:layout_height="117dp"
+                android:layout_weight="1"
+                android:padding="3dp"
+                app:srcCompat="@drawable/m4" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="200dp"
+                android:layout_height="117dp"
+                android:layout_weight="1"
+                android:padding="3dp"
+                app:srcCompat="@drawable/m5" />
+        </LinearLayout>
+    </HorizontalScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
